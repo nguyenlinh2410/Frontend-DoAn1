@@ -1,0 +1,168 @@
+/* ----- Header ----- */
+.admin-header {
+  padding: 15px 25px;
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.admin-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.admin-link {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+}
+
+/* ----- Table and layout ----- */
+.admin-container {
+  padding: 25px;
+}
+
+.admin-container h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f2f2f2;
+}
+
+.admin-table td a {
+  color: #0066cc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.admin-table td a:hover {
+  text-decoration: underline;
+}
+
+.admin-table button {
+  background: none;
+  border: none;
+  color: #cc0000;
+  cursor: pointer;
+}
+
+.admin-table button:hover {
+  text-decoration: underline;
+}
+
+.btn-logout {
+  margin-left: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 15px;
+}
+.btn-logout:hover {
+  background: #bab6b6;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #b1afaf;
+}
+.delete-btn:hover {
+  background: #b1afaf;
+}
+
+.table-ad {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: -webkit-fill-available;
+}
+
+/* //=============================Login========================== */
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  /* background: rgba(255, 255, 255, 0.9); */
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.login-box form {
+  width: auto;
+  background: #fff;
+}
+
+.login-box input {
+  width: 91%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.login-box button:hover {
+  background-color: #5a6fd1;
+}

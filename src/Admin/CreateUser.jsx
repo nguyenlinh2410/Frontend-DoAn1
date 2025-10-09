@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { createUser } from "../services/UserService";
 import "./create.css";
+import HeaderAd from "./HeaderAd";
 function CreateUser() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,6 +19,7 @@ function CreateUser() {
       setName("");
       setEmail("");
       setPassword("");
+      navigate("/admin");
     } catch (e) {
       console.error("Error creating user: ", e);
       alert("Error");
@@ -24,6 +28,7 @@ function CreateUser() {
 
   return (
     <>
+      <HeaderAd />
       <h2>CREATE USER</h2>
 
       <form onSubmit={handleSubmit}>
