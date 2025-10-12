@@ -1,7 +1,11 @@
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+
 function Homepage() {
   return (
     <>
-      <h1>Hello Im HomePage</h1>
+      <Header/>
+      <Hero/>
     </>
   );
 }

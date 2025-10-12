@@ -1,0 +1,66 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Satisfy&display=swap");
+/* body {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.header {
+  color: white;
+  background: rgba(40, 100, 50, 0.8);
+  padding: 5px 0;
+  font-family: "Great Vibes", cursive;
+}
+
+.header-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 93px;
+  height: 80px;
+  object-fit: cover;
+  margin-left: -34px;
+}
+
+.navbar ul {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0;
+}
+
+.navbar a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a:hover {
+  color: #1a241e;
+  /* color: #91b6ae; */
+}
+
+.lang-icon img {
+  cursor: pointer;
+  width: 32px;
+  height: 22px;
+  margin-right: 10px;
+  margin-left: 25px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.lang-flag {
+  transform: scale(1.1);
+}

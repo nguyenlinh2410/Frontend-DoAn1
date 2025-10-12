@@ -25,7 +25,7 @@ export default function GetAllAdmin() {
   };
   return (
     <>
-      <h1>All Admin</h1>
+      <h1 className="Allad">All Admin</h1>
 
       <table className="table-ad">
         <tr>

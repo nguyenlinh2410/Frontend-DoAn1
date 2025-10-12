@@ -9,7 +9,6 @@ function EditUser() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    password: "",
   });
 
   useEffect(() => {
@@ -20,7 +19,6 @@ function EditUser() {
         setFormData({
           name: res.user.name,
           email: res.user.email,
-          password: res.user.password,
         });
       } catch (e) {
         console.error("Loi load user: ", e);
@@ -56,15 +54,6 @@ function EditUser() {
           type="text"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-        />
-
-        <label>Password</label>
-        <input
-          type="text"
-          value={formData.password}
-          onChange={(e) =>
-            setFormData({ ...formData, password: e.target.value })
-          }
         />
 
         <input type="submit" value="Edit" />

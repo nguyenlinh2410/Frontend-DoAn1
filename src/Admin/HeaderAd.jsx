@@ -10,7 +10,7 @@ export default function HeaderAd() {
   };
   return (
     <header className="admin-header">
-      <h1 className="admin-title">Admin Panel</h1>
+      <h1 className="admin-title">Admin Manager</h1>
       <nav>
         <Link to="/admin" className="admin-link">
           Dashboard
