@@ -29,9 +29,9 @@ function CreateUser() {
   return (
     <>
       <HeaderAd />
-      <h2>CREATE USER</h2>
+      <h2 className="title">CREATE USER</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="Create">
         <label>Your Name</label>
         <input
           type="text"
@@ -56,7 +56,7 @@ function CreateUser() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Create" className="create-submit" />
       </form>
     </>
   );

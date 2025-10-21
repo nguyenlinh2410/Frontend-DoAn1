@@ -15,10 +15,15 @@ export default function HeaderAd() {
         <Link to="/admin" className="admin-link">
           Dashboard
         </Link>
-        <Link to="/admin/create" className="admin-link">
-          Create User
+        <Link to="#!" className="admin-link">
+          Di Tich
         </Link>
-        <button className="btn-logout" onClick={handleLogout}>Logout</button>
+        <Link to="/admin-mana" className="admin-link">
+          Admin
+        </Link>
+        <button className="btn-logout" onClick={handleLogout}>
+          Logout
+        </button>
       </nav>
     </header>
   );

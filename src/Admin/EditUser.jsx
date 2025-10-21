@@ -39,9 +39,9 @@ function EditUser() {
   return (
     <>
       <HeaderAd />
-      <h2>EDIT USER</h2>
+      <h2 className="title">EDIT USER</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="Edit">
         <label>Your Name</label>
         <input
           type="text"

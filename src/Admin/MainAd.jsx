@@ -1,10 +1,9 @@
 import HeaderAd from "./HeaderAd";
-import GetAllAdmin from "./GetAllAdmin";
 export default function MainAd() {
   return (
     <>
       <HeaderAd />
-      <GetAllAdmin />
+      <h1 style={{ fontSize: "50px", textAlign:"center" }}>Welcome to Trang An</h1>
     </>
   );
 }

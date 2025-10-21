@@ -10,15 +10,16 @@
 }
 
 .admin-title {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
 }
 
 .admin-link {
-  margin-left: 20px;
+  margin-left: 40px;
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 21px;
 }
 
 .admin-link:hover {
@@ -74,11 +75,12 @@
 
 .btn-logout {
   margin-left: 30px;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
   transition: 0.3s;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 21px;
+  padding: 2px;
 }
 .btn-logout:hover {
   background: #bab6b6;

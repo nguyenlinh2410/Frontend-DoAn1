@@ -4,6 +4,7 @@ import MainAd from "../Admin/MainAd";
 import EditUser from "../Admin/EditUser";
 import Login from "../Admin/Login";
 import AdminProtectedRoute from "../Admin/AdminProtectedRoute";
+import Admin from "../Admin/Admin";
 
 const routes = [
   { path: "/", element: <Homepage /> },
@@ -12,6 +13,14 @@ const routes = [
     element: (
       <AdminProtectedRoute>
         <MainAd />
+      </AdminProtectedRoute>
+    ),
+  },
+  {
+    path: "/admin-mana",
+    element: (
+      <AdminProtectedRoute>
+        <Admin />
       </AdminProtectedRoute>
     ),
   },
