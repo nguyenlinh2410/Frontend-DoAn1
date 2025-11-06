@@ -40,10 +40,11 @@ export const loginAdmin = async (email, password) => {
   try {
     const res = await axios.post(`/login`, { email, password });
     //lưu thông tin vào localstorage
-    localStorage.setItem("admin", JSON.stringify(res.data.user));
+    localStorage.setItem("admin", JSON.stringify(res.data.admin));
     return res.data;
   } catch (e) {
-    console.log(e);
+    console.log("Lỗi loginAdmin", e);
+    throw e;
   }
 };
 
@@ -53,5 +54,11 @@ export const logoutAdmin = () => {
 
 export const getCurrentAdmin = () => {
   const admin = localStorage.getItem("admin");
-  return admin ? JSON.parse(admin) : null;
+  if (!admin || admin === "undefined" || admin === "null") return null;
+  try {
+    return JSON.parse(admin);
+  } catch (e) {
+    console.error("Lỗi parse JSON admin:", e);
+    return null;
+  }
 };

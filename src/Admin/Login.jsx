@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginAdmin } from "../services/UserService";
+import { toast } from "react-toastify";
 import "./admin.css";
 
 function Login() {
@@ -11,12 +12,19 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError("");
     try {
       const res = await loginAdmin(email, password);
-      console.log("✅ Đăng nhập thành công:", res);
+      toast.success("Đăng nhập thành công");
+      console.log(res)
       navigate("/admin");
     } catch (err) {
-      setError(err);
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message);
+      } else {
+        setError("Dang nhap that bai!! vui long thu lai");
+      }
+      // toast.error(err.response?.data?.message || "Đăng nhập thất bại");
     }
   };
 
@@ -24,7 +32,7 @@ function Login() {
     <div className="login-page">
       <div className="login-box">
         <h2>Login</h2>
-        <form onSubmit={handleLogin} >
+        <form onSubmit={handleLogin}>
           <input
             type="email"
             placeholder="Email"
@@ -43,7 +51,7 @@ function Login() {
           <br />
           <button type="submit">Login</button>
         </form>
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
       </div>
     </div>
   );

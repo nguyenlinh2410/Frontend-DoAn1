@@ -5,6 +5,9 @@ import EditUser from "../Admin/EditUser";
 import Login from "../Admin/Login";
 import AdminProtectedRoute from "../Admin/AdminProtectedRoute";
 import Admin from "../Admin/Admin";
+import AddDiTich from "../Admin/DiTich/AddDiTich";
+import DiTich from "../Admin/DiTich/DiTich.jsx";
+import EditDiTich from "../Admin/DiTich/EditDiTich.jsx";
 
 const routes = [
   { path: "/", element: <Homepage /> },
@@ -41,6 +44,30 @@ const routes = [
     ),
   },
   { path: "/login", element: <Login /> },
+  {
+    path: "/ditich",
+    element: (
+      <AdminProtectedRoute>
+        <DiTich />
+      </AdminProtectedRoute>
+    ),
+  },
+  {
+    path: "/ditich/create",
+    element: (
+      <AdminProtectedRoute>
+        <AddDiTich />
+      </AdminProtectedRoute>
+    ),
+  },
+  {
+    path: "/ditich/edit/:id",
+    element: (
+      <AdminProtectedRoute>
+        <EditDiTich />
+      </AdminProtectedRoute>
+    ),
+  },
 ];
 
 export default routes;
