@@ -25,8 +25,11 @@ export default function HeaderAd() {
         <Link to="/admin" className="admin-link">
           Dashboard
         </Link>
+        <Link to="/disan" className="admin-link">
+          Di Sản
+        </Link>
         <Link to="/ditich" className="admin-link">
-          Di Tich
+          Di Tích
         </Link>
         <Link to="/admin-mana" className="admin-link">
           Admin

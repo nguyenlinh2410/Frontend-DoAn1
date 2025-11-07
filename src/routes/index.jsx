@@ -8,6 +8,9 @@ import Admin from "../Admin/Admin";
 import AddDiTich from "../Admin/DiTich/AddDiTich";
 import DiTich from "../Admin/DiTich/DiTich.jsx";
 import EditDiTich from "../Admin/DiTich/EditDiTich.jsx";
+import DiSan from "../Admin/Disan/DiSan.jsx";
+import AddDiSan from "../Admin/Disan/AddDiSan.jsx"
+import EditDiSan from '../Admin/Disan/EditDiSan.jsx'
 
 const routes = [
   { path: "/", element: <Homepage /> },
@@ -65,6 +68,30 @@ const routes = [
     element: (
       <AdminProtectedRoute>
         <EditDiTich />
+      </AdminProtectedRoute>
+    ),
+  },
+  {
+    path: "/disan",
+    element: (
+      <AdminProtectedRoute>
+        <DiSan />
+      </AdminProtectedRoute>
+    ),
+  },
+  {
+    path: "/disan/create",
+    element: (
+      <AdminProtectedRoute>
+        <AddDiSan />
+      </AdminProtectedRoute>
+    ),
+  },
+  {
+    path: "/disan/edit/:id",
+    element: (
+      <AdminProtectedRoute>
+        <EditDiSan />
       </AdminProtectedRoute>
     ),
   },
