@@ -4,7 +4,11 @@
     "about":"Giới thiệu",
     "heritage":"Di tích và thắng cảnh",
     "culture":"Di sản văn hóa phi vật thể",
-    "ticketInfo":"Thông tin vé",
+    "ticketInfo":"Địa điểm và giá vé",
     "contact": "Liên hệ"
+    },
+    "Attractions":{
+        "tittle":"Các điểm đến hấp dẫn"
+
     }
 }

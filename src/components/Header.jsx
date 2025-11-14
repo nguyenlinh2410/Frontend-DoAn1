@@ -35,7 +35,7 @@ export default function Header() {
               <a href="#">{t("header.heritage")}</a>
             </li>
             <li>
-              <a href="#">{t("header.culture")}</a>
+              <a href="#" style={{width:"118%"}}>{t("header.culture")}</a>
             </li>
             <li>
               <a href="#">{t("header.ticketInfo")}</a>

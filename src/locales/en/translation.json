@@ -1,10 +1,13 @@
 {
-    "header":{
+  "header": {
     "home": "Home",
-    "about":"About",
-    "heritage":"Heritage & Scenery",
-    "culture":"Intangible Heritage",
-    "ticketInfo":"Ticket Information",
+    "about": "About",
+    "heritage": "Heritage & Scenery",
+    "culture": "Intangible Heritage",
+    "ticketInfo": "Locations and Ticket Prices",
     "contact": "Contact"
-    }
+  },
+  "Attractions": {
+    "tittle": "Attractions"
+  }
 }

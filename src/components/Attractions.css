@@ -1,0 +1,106 @@
+.attractions-section {
+  margin-top: 60px;
+  position: relative !important;
+}
+
+.attractions-title {
+  color: rgba(14, 68, 51, 1);
+  margin-left: 4px;
+  margin-bottom: 18px;
+}
+
+.attractions-list {
+  margin-bottom: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.place-card {
+  text-align: center;
+  border-radius: 12px;
+  /* overflow: hidden !important; */
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.place-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.place-card p {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-wrapper-container {
+  position: relative !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow: visible !important;
+}
+
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: all 0.3s ease;
+}
+
+/* Reset lại style mặc định của button */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  all: unset; /* xóa toàn bộ style mặc định của trình duyệt */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white; /* màu nền */
+  color: #333; /* màu mũi tên */
+  border-radius: 50%; /* bo tròn nút */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 30px;
+}
+
+/* Vị trí của nút trái và phải */
+.swiper-button-prev-custom {
+  left: -15px; /* chỉnh lùi vào trong/ngoài tùy bạn */
+}
+
+.swiper-button-next-custom {
+  right: -15px;
+}
+
+/* khi hover vaof container thif hien nut */
+.attractions-list:hover .swiper-button-next-custom,
+.attractions-list:hover .swiper-button-prev-custom {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Hiệu ứng hover */
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background-color: #d5d7d8;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
