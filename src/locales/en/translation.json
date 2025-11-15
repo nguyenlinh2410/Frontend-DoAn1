@@ -9,5 +9,23 @@
   },
   "Attractions": {
     "tittle": "Attractions"
+  },
+  "Introduction": {
+    "read-more": "See more",
+    "Intro": {
+      "tittle": "Introduction to Trang An Scenic Landscape Complex:",
+      "text": "Trang An, a famous scenic complex in Ninh Binh, has been recognized by UNESCO as a World Cultural and Natural Heritage Site. Blessed with poetic landscapes of rivers and mountains, magnificent cave systems, and profound historical and spiritual values, Trang An is an ideal destination for nature lovers and those wishing to explore the harmonious beauty between heaven, earth, and the Vietnamese people"
+    },
+    "Ditich": {
+      "tittle": "Relics and Scenic Landscapes of Trang An",
+      "text": "The Hoa Lu Ancient Capital Historical and Cultural Site is part of the Trang An World Heritage Complex.The site was recognized by the Ministry of Culture as a National Relic in 1962, and later classified by the Prime Minister as a Special National Relic in 2012 under the name “Historical and Architectural Relic of the Hoa Lu Ancient Capital.”This is a very special destination, rich in cultural and historical values, and renowned for its magnificent natural scenery.",
+      "text2": "Some other monuments and sights:"
+    },
+    "Disan": {
+      "tittle": "Intangible Cultural Heritage:",
+      "text": "The Hoa Lu Festival – a National Intangible Cultural Heritage, is held annually at the Special National Relic Site of the Hoa Lu Ancient Capital to commemorate and honor the great contributions of King Dinh Tien Hoang.The festival glorifies the position and role of the Đại Cồ Việt State in the course of national history, while inspiring patriotism, national pride, self-respect, and unity among the Vietnamese people in the cause of national construction, defense, and international integration.",
+      "text2": "Some other intangible cultural heritages include:"
+    },
+    "media": "Images and Videos:"
   }
 }

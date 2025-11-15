@@ -10,6 +10,7 @@ import { getAllDiTich } from "../services/DiTichService";
 
 export default function Attractions() {
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
   const [places, setPlaces] = useState([]);
   useEffect(() => {
     fetchUsers();
@@ -53,7 +54,9 @@ export default function Attractions() {
                 <div className="place-card">
                   <img src={place.hinh_anh} alt="" />
                   <p>
-                    {t.language === "vi" ? place.tieu_de_vi : place.tieu_de_en}
+                    {i18n.language === "vi"
+                      ? place.tieu_de_vi
+                      : place.tieu_de_en}
                   </p>
                 </div>
               </SwiperSlide>
@@ -62,7 +65,7 @@ export default function Attractions() {
             <SwiperSlide>
               <div className="place-card">
                 <img src={anh} alt="" />
-                <p>Trang ne</p>
+                <p>Tràng An</p>
               </div>
             </SwiperSlide>
           )}

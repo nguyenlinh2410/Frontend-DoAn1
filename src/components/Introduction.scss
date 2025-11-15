@@ -1,0 +1,183 @@
+.Introduction {
+  h2 {
+    color: rgba(14, 68, 51, 1);
+    stroke: rgba(0, 0, 0, 0.37) !important;
+    stroke-width: 2;
+  }
+}
+
+/* -------------------intro--------------- */
+.trang-an-intro {
+  display: flex;
+  /* gap: 250px; */
+  margin-bottom: 100px;
+  justify-content: space-between;
+
+  .content-left {
+    width: 555px;
+    height: 192px;
+  }
+
+  .image-intro {
+    height: 300px !important;
+  }
+}
+.gach {
+  width: 226px;
+  height: 2px;
+
+  border: 1px solid rgba(25, 115, 55, 1);
+  margin-left: -12px;
+  background-color: rgba(25, 115, 55, 1);
+}
+.Introduction .main-image {
+  width: 468px;
+  height: 345px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.Introduction p {
+  margin-top: 10px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.Introduction .btn {
+  display: flex;
+  /* gap: 143px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-more {
+  border: none;
+  border-radius: 50px;
+  width: 112px;
+  height: 36px;
+  background-color: rgb(196, 194, 194);
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  opacity: 0.8;
+}
+
+/* ------------------di tich--------------- */
+.trang-an-ditich {
+  position: relative;
+  display: flex;
+
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  .image-ditich {
+    position: absolute;
+    top: 79px;
+  }
+  .trang-an-sights {
+    width: 50%;
+
+    .gach-ditich {
+      margin-top: 15px;
+      margin-left: 364px;
+      /* display: flex;
+      justify-content: end; */
+    }
+  }
+}
+.thumbnail-gallery {
+  padding: 10px;
+  border-radius: 21px;
+  width: 500px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  background: rgba(35, 23, 23, 0.09);
+}
+
+.thumbnail {
+  width: 130px;
+  height: 123px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* ---------------------di san-------------- */
+.trang-an-disan {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .intangible-heritage {
+    width: 50%;
+  }
+
+  //
+  .gach-disan {
+    margin-top: 15px;
+    margin-left: 364px;
+    /* display: flex;
+      justify-content: end; */
+  }
+  .image-disan {
+    position: absolute;
+    top: 79px;
+    right: 10px;
+  }
+}
+
+// --------------------------media--------------------------------
+.media-section {
+  width: 100%;
+  padding: 20px 0;
+  height: 700px;
+    h2 {
+    color: rgba(14, 68, 51, 1);
+    stroke: rgba(0, 0, 0, 0.37) !important;
+    stroke-width: 2;
+  }
+}
+
+.media-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 65px;
+  justify-content: center;
+}
+
+.video-box {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  padding-top: 56.25%; /* tỷ lệ 16:9 */
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 300px;
+}
+
+.image-grid {
+  margin-right: 86px;
+  img {
+    width: 211px;
+    height: 231px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}

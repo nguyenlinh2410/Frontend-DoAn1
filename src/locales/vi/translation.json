@@ -1,14 +1,31 @@
 {
-    "header":{
+  "header": {
     "home": "Trang chủ",
-    "about":"Giới thiệu",
-    "heritage":"Di tích và thắng cảnh",
-    "culture":"Di sản văn hóa phi vật thể",
-    "ticketInfo":"Địa điểm và giá vé",
+    "about": "Giới thiệu",
+    "heritage": "Di tích và thắng cảnh",
+    "culture": "Di sản văn hóa phi vật thể",
+    "ticketInfo": "Địa điểm và giá vé",
     "contact": "Liên hệ"
+  },
+  "Attractions": {
+    "tittle": "Các điểm đến hấp dẫn"
+  },
+  "Introduction": {
+    "read-more": "Xem thêm",
+    "Intro": {
+      "tittle": "Giới thiệu về Khu di tích Tràng An:",
+      "text": "Tràng An – quần thể danh thắng nổi tiếng của Ninh Bình, được UNESCO công nhận là Di sản Văn hóa và Thiên nhiên Thế giới. Với cảnh sắc non nước hữu tình, hệ thống hang động kỳ vĩ cùng giá trị lịch sử – tâm linh sâu sắc, Tràng An là điểm đến lý tưởng cho những ai yêu thiên nhiên và muốn khám phá vẻ đẹp hòa quyện giữa đất trời và con người Việt Nam."
     },
-    "Attractions":{
-        "tittle":"Các điểm đến hấp dẫn"
-
-    }
+    "Ditich": {
+      "tittle": "Di tích và thắng cảnh Tràng An:",
+      "text": "Khu di tích lịch sử – văn hóa Cố đô Hoa Lư thuộc Quần thể di sản thế giới Tràng An. Di tích đã được Bộ Văn hóa xếp hạng là Di tích Quốc gia vào năm 1962 và được Thủ tướng Chính phủ xếp hạng là Di tích Quốc gia đặc biệt vào năm 2012 với tên “Di tích lịch sử và kiến trúc nghệ thuật Cố đô Hoa Lư”. Đây là điểm đến rất đặc biệt, mang đậm giá trị văn hóa – lịch sử và nổi tiếng với cảnh quan thiên nhiên tuyệt mỹ vô cùng.",
+      "text2": "Một số di tích và thắng cảnh khác:"
+    },
+    "Disan": {
+      "tittle": "Di sản văn hoá phi vật thể:",
+      "text": "Lễ hội Hoa Lư – di sản văn hóa phi vật thể quốc gia, được tổ chức hàng năm tại khu di tích quốc gia đặc biệt Cố đô Hoa Lư nhằm tưởng nhớ, tri ân công lao to lớn của vua Đinh Tiên Hoàng; tôn vinh vị trí, vai trò của nhà nước Đại Cồ Việt trong tiến trình lịch sử dân tộc; khơi dậy truyền thống yêu nước, lòng tự hòa, tự tôn dân tộc và tinh thần đoàn kết của các dân tộc Việt nam trong sự nghiệp xây dựng, bảo vệ Tổ quốc và hội nhập quốc tế.",
+      "text2": "Môt số di sản văn hoá phi vật thể khác:"
+    },
+    "media":"Hình ảnh và Video:"
+  }
 }
