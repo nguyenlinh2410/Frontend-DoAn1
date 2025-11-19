@@ -38,6 +38,7 @@
 .place-card p {
   margin-top: 8px;
   font-weight: 500;
+  font-size: 1.4rem;
 }
 
 .place-card:hover {
@@ -78,7 +79,7 @@
   top: 45%;
   transform: translateY(-50%);
   z-index: 10;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 /* Vị trí của nút trái và phải */

@@ -1,10 +1,47 @@
 import "./Introduction.scss";
 import images from "../assets/img";
 import { useTranslation } from "react-i18next";
+import { useEffect, useRef } from "react";
 
 export default function Introduction() {
   const { t } = useTranslation();
+  const videoRef = useRef(null);
 
+  useEffect(() => {
+    const iframe = videoRef.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Play
+            iframe.contentWindow.postMessage(
+              JSON.stringify({
+                event: "command",
+                func: "playVideo",
+                args: "",
+              }),
+              "*"
+            );
+          } else {
+            // Pause
+            iframe.contentWindow.postMessage(
+              JSON.stringify({
+                event: "command",
+                func: "pauseVideo",
+                args: "",
+              }),
+              "*"
+            );
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(iframe);
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       <div className="Introduction">
@@ -121,9 +158,10 @@ export default function Introduction() {
           <div class="media-wrapper">
             <div class="video-box">
               <iframe
+                ref={videoRef}
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Ax4H_FPvfE8?si=m1vEbEFIAOaIlW7e"
+                src="https://www.youtube.com/embed/Ax4H_FPvfE8?enablejsapi=1&mute=1&autoplay=1&controls=1"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,6 +1,9 @@
 import axios from "../axios";
 
 // đặt URL API của backend
+export const createLienHe = (data) => {
+  return axios.post("/api/create/lienhe", data);
+};
 export const createUser = (data) => {
   return axios.post("/api/create/users", data);
 };

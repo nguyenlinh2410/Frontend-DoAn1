@@ -27,5 +27,15 @@
       "text2": "Some other intangible cultural heritages include:"
     },
     "media": "Images and Videos:"
+  },
+  "Footer": {
+    "desc": "Trang An Scenic Landscape Complex – A UNESCO Dual Heritage Site since 2014",
+    "adress": "Trang An Ecotourism Complex, Ninh Xuan Commune, Hoa Lu District, Ninh Binh",
+    "fb": "Trang An Heritage Fanpage",
+    "tittle": "Leave Your Information for Consultation",
+    "name": "Full name",
+    "phone": "Phone Number",
+    "email": "Email(optional)",
+    "send": "Submit Information →"
   }
 }
