@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getAllDiTich,deleteDiTich } from "../../services/DiTichService";
+import { getAllDiTich, deleteDiTich } from "../../services/DiTichService";
 import "../getAllAd.css";
 export default function GetAllDiTich() {
   const navigate = useNavigate();
@@ -16,13 +16,13 @@ export default function GetAllDiTich() {
   };
 
   const handleDelete = async (id) => {
-      try {
-        await deleteDiTich(id);
-        fetchUsers(); //load lai danh sach
-      } catch (e) {
-        console.log("err delete di tich", e);
-      }
-    };
+    try {
+      await deleteDiTich(id);
+      fetchUsers(); //load lai danh sach
+    } catch (e) {
+      console.log("err delete di tich", e);
+    }
+  };
   return (
     <>
       {/* <h1 className="Allad">All Admin</h1> */}
@@ -47,7 +47,7 @@ export default function GetAllDiTich() {
               <td>
                 <button
                   className="edit-btn"
-                  onClick={() => navigate(`/ditich/edit/${ditich.id}`)}
+                  onClick={() => navigate(`/admin/ditich/edit/${ditich.id}`)}
                 >
                   Sửa
                 </button>
@@ -63,6 +63,7 @@ export default function GetAllDiTich() {
         ) : (
           <tr>Không có Di tich</tr>
         )}
+        
       </table>
     </>
   );

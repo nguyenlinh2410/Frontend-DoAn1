@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { createDiTich } from "../../services/DiTichService";
-import HeaderAd from "../HeaderAd";
 import { Editor } from "@tinymce/tinymce-react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -46,7 +45,6 @@ export default function AddDiTich() {
 
   return (
     <>
-      <HeaderAd />
       <div className="container-fluid p-4 ">
         <div className="card shadow p-4">
           <h2 className="text-center mb-4 fw-bold">🏛️ CREATE DI TICH</h2>

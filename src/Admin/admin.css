@@ -1,35 +1,4 @@
-/* ----- Header ----- */
-.admin-header {
-  padding: 15px 25px;
-  background-color: #222;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 56px;
-}
-
-.admin-title {
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.admin-link {
-  margin-left: 40px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 21px;
-}
-
-.admin-link:hover {
-  text-decoration: underline;
-}
-
 /* ----- Table and layout ----- */
-.admin-container {
-  padding: 25px;
-}
 
 .admin-container h2 {
   font-size: 22px;
@@ -127,7 +96,6 @@
   border-radius: 10px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
-  
 }
 
 .login-box h2 {

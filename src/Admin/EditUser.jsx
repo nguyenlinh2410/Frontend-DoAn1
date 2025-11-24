@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getUserById, updateUser } from "../services/UserService";
 import "./create.css";
-import HeaderAd from "./HeaderAd";
 function EditUser() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -38,7 +37,6 @@ function EditUser() {
   };
   return (
     <>
-      <HeaderAd />
       <h2 className="title">EDIT USER</h2>
 
       <form onSubmit={handleSubmit} className="Edit">

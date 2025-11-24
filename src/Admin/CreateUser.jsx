@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUser } from "../services/UserService";
 import "./create.css";
-import HeaderAd from "./HeaderAd";
 function CreateUser() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
@@ -28,7 +27,6 @@ function CreateUser() {
 
   return (
     <>
-      <HeaderAd />
       <h2 className="title">CREATE USER</h2>
 
       <form onSubmit={handleSubmit} className="Create">

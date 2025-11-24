@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import HeaderAd from "../HeaderAd";
 import { Editor } from "@tinymce/tinymce-react";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -9,7 +8,7 @@ import {
   getDanhMuc,
 } from "../../services/DiSanService";
 
-export default function EditDiTich() {
+export default function EditDiSan() {
   const { id } = useParams();
   const [danhmuc, setDanhmuc] = useState([]);
   const [disan, setDiSan] = useState({
@@ -75,7 +74,6 @@ export default function EditDiTich() {
 
   return (
     <>
-      <HeaderAd />
       <div className="container-fluid p-4 ">
         <div className="card shadow p-4">
           <h2 className="text-center mb-4 fw-bold">🏛️ UPDATE DI SAN</h2>

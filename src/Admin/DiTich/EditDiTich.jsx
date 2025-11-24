@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { getDiTichById, updateDiTich } from "../../services/DiTichService";
-import HeaderAd from "../HeaderAd";
 import { Editor } from "@tinymce/tinymce-react";
 import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -49,19 +48,16 @@ export default function EditDiTich() {
     e.preventDefault();
     try {
       await updateDiTich(id, ditich);
-      toast.success('Update Di Tich thành công')
+      toast.success("Update Di Tich thành công");
       navigate("/ditich");
     } catch (e) {
       console.error("Loi khi cap nhat: ", e);
-      toast.error('Lỗi update di tích')
+      toast.error("Lỗi update di tích");
     }
   };
 
-  
-  console.log("dl di tich: ", ditich);
   return (
     <>
-      <HeaderAd />
       <div className="container-fluid p-4 ">
         <div className="card shadow p-4">
           <h2 className="text-center mb-4 fw-bold">🏛️ UPDATE DI TICH</h2>

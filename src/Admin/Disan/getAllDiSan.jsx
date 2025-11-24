@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getAllDiSan,deleteDiSan } from "../../services/DiSanService";
+import { getAllDiSan, deleteDiSan } from "../../services/DiSanService";
 import "../getAllAd.css";
 export default function GetAllDiTich() {
   const navigate = useNavigate();
@@ -16,16 +16,15 @@ export default function GetAllDiTich() {
   };
 
   const handleDelete = async (id) => {
-      try {
-        await deleteDiSan(id);
-        fetchUsers(); //load lai danh sach
-      } catch (e) {
-        console.log("err delete di sản", e);
-      }
-    };
+    try {
+      await deleteDiSan(id);
+      fetchUsers(); //load lai danh sach
+    } catch (e) {
+      console.log("err delete di sản", e);
+    }
+  };
   return (
     <>
-
       <table className="table-ad">
         <tr>
           <th>STT</th>
@@ -48,7 +47,7 @@ export default function GetAllDiTich() {
               <td>
                 <button
                   className="edit-btn"
-                  onClick={() => navigate(`/disan/edit/${disan.id}`)}
+                  onClick={() => navigate(`/admin/disan/edit/${disan.id}`)}
                 >
                   Sửa
                 </button>
@@ -64,6 +63,7 @@ export default function GetAllDiTich() {
         ) : (
           <tr>Không có Di tich</tr>
         )}
+        
       </table>
     </>
   );

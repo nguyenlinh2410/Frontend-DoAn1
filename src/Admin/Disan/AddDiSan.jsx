@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import HeaderAd from "../HeaderAd";
 import { Editor } from "@tinymce/tinymce-react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -57,7 +56,6 @@ export default function AddDiTich() {
   console.log("check danh muc: ", danhmuc);
   return (
     <>
-      <HeaderAd />
       <div className="container-fluid p-4 ">
         <div className="card shadow p-4">
           <h2 className="text-center mb-4 fw-bold">🏛️ CREATE DI SAN</h2>
@@ -73,6 +71,7 @@ export default function AddDiTich() {
                   required
                 >
                   <option value="">-- Chọn danh mục --</option>
+                  
                   {danhmuc.map((dm) => {
                     return(
                     <option value={dm.id} key={dm.id}>

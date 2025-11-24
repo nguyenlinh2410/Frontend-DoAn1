@@ -1,31 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
-import { logoutAdmin } from "../../services/UserService";
 import GetAllDiTich from "./getAllDiTich";
 import "../admin.css";
 
-export default function HeaderAd() {
-  const navigate = useNavigate();
-  const handleLogout = () => {
-    logoutAdmin();
-    navigate("/login");
-  };
+export default function DiTich() {
   return (
     <>
-        <header className="admin-header">
-          <h1 className="admin-title">Admin Manager</h1>
-          <nav>
-            <Link to="/admin" className="admin-link">
-              Dashboard
-            </Link>
-            <Link to="/ditich/create" className="admin-link">
-              Create DiTich
-            </Link>
-            <button className="btn-logout" onClick={handleLogout}>
-              Logout
-            </button>
-          </nav>
-        </header>
-        <GetAllDiTich/>
+      <header className="admin-header">
+        <h1 className="admin-title">Di Tích và Thắng Cảnh</h1>
+      </header>
+      <GetAllDiTich />
     </>
   );
 }

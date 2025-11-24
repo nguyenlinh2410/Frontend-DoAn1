@@ -59,6 +59,7 @@ export default function GetAllAdmin() {
         ) : (
           <tr>Không có admin</tr>
         )}
+        
       </table>
     </>
   );
