@@ -47,7 +47,7 @@ export default function AddDiTich() {
         hinh_anh: "",
         danh_muc_id: "",
       });
-      navigate("/disan");
+      navigate("/admin/disan");
     } catch (err) {
       console.error(err);
       toast.error("Lỗi khi thêm di sản!");
@@ -71,12 +71,13 @@ export default function AddDiTich() {
                   required
                 >
                   <option value="">-- Chọn danh mục --</option>
-                  
+
                   {danhmuc.map((dm) => {
-                    return(
-                    <option value={dm.id} key={dm.id}>
-                      {dm.ten_danh_muc_vi}
-                    </option>)
+                    return (
+                      <option value={dm.id} key={dm.id}>
+                        {dm.ten_danh_muc_vi}
+                      </option>
+                    );
                   })}
                 </select>
               </div>
@@ -139,7 +140,7 @@ export default function AddDiTich() {
             </div>
 
             <div className="row">
-              <div className="col-md-6 mb-3">
+              <div className=" mb-3">
                 <label className="form-label">Nội dung (Vi)</label>
                 <Editor
                   apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
@@ -149,7 +150,7 @@ export default function AddDiTich() {
                   }
                 />
               </div>
-              <div className="col-md-6 mb-3">
+              <div className=" mb-3">
                 <label className="form-label">Nội dung (En)</label>
                 <Editor
                   apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"

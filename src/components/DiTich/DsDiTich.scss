@@ -1,0 +1,56 @@
+.DsDiTich {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  // height: 100vh;
+  .main-container {
+    .ditich {
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(108, 119, 103, 0.47);
+      // box-shadow: 17px -20px 4px 16px rgba(0, 0, 0, 0.09);
+      height: 225px;
+      width: 839px;
+      margin-bottom: 58px;
+      border-radius: 30px;
+      padding: 30px;
+      display: flex;
+      //   gap: 71px;
+      align-items: center;
+      justify-content: space-evenly;
+      transition: 0.1s;
+
+    }
+      .img-ditich {
+        cursor: pointer;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .content-right {
+        width: 60%;
+        h2 {
+          cursor: pointer;
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .desc {
+          font-size: 16px;
+        }
+
+        .btn {
+          background: #fff;
+          margin-left: 342px;
+          font-size: 1rem;
+        }
+        .btn:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .ditich:hover {
+      background: rgba(108, 119, 103, 0.8);
+    }
+  }
+

@@ -36,7 +36,7 @@ export default function AddDiTich() {
         noi_dung_en: "",
         hinh_anh: "",
       });
-      navigate("/ditich");
+      navigate("/admin/ditich");
     } catch (err) {
       console.error(err);
       toast.error("Lỗi khi thêm di tích!");
@@ -107,30 +107,28 @@ export default function AddDiTich() {
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-6 mb-3">
-                <label className="form-label">Nội dung (Vi)</label>
-                <Editor
-                  apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
-                  value={formData.noi_dung_vi}
-                  onEditorChange={(content) =>
-                    setFormData({ ...formData, noi_dung_vi: content })
-                  }
-                />
-              </div>
-              <div className="col-md-6 mb-3">
-                <label className="form-label">Nội dung (En)</label>
-                <Editor
-                  apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
-                  value={formData.noi_dung_en}
-                  className="form-control"
-                  rows="5"
-                  onEditorChange={(content) =>
-                    setFormData({ ...formData, noi_dung_en: content })
-                  }
-                  placeholder="Nhập nội dung tiếng Anh"
-                />
-              </div>
+            <div className=" mb-3">
+              <label className="form-label">Nội dung (Vi)</label>
+              <Editor
+                apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
+                value={formData.noi_dung_vi}
+                onEditorChange={(content) =>
+                  setFormData({ ...formData, noi_dung_vi: content })
+                }
+              />
+            </div>
+            <div className=" mb-3">
+              <label className="form-label">Nội dung (En)</label>
+              <Editor
+                apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
+                value={formData.noi_dung_en}
+                className="form-control"
+                rows="5"
+                onEditorChange={(content) =>
+                  setFormData({ ...formData, noi_dung_en: content })
+                }
+                placeholder="Nhập nội dung tiếng Anh"
+              />
             </div>
 
             <div className="mb-3">

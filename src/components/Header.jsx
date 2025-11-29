@@ -29,19 +29,21 @@ export default function Header() {
               <a href="/">{t("header.home")}</a>
             </li>
             <li>
-              <a href="#">{t("header.about")}</a>
+              <a href="/about">{t("header.about")}</a>
             </li>
             <li>
-              <a href="#">{t("header.heritage")}</a>
+              <a href="/di-tich">{t("header.heritage")}</a>
             </li>
             <li>
-              <a href="#" style={{width:"118%"}}>{t("header.culture")}</a>
+              <a href="#" style={{ width: "118%" }}>
+                {t("header.culture")}
+              </a>
             </li>
             <li>
               <a href="#">{t("header.ticketInfo")}</a>
             </li>
             <li>
-              <a href="#">{t("header.contact")}</a>
+              <a href="/lien-he">{t("header.contact")}</a>
             </li>
           </ul>
         </nav>

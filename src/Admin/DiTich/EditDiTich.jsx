@@ -49,7 +49,7 @@ export default function EditDiTich() {
     try {
       await updateDiTich(id, ditich);
       toast.success("Update Di Tich thành công");
-      navigate("/ditich");
+      navigate("/admin/ditich");
     } catch (e) {
       console.error("Loi khi cap nhat: ", e);
       toast.error("Lỗi update di tích");
@@ -125,30 +125,28 @@ export default function EditDiTich() {
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-6 mb-3">
-                <label className="form-label">Nội dung (Vi)</label>
-                <Editor
-                  apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
-                  value={ditich.noi_dung_vi}
-                  onEditorChange={(content) =>
-                    setDiTich({ ...ditich, noi_dung_vi: content })
-                  }
-                />
-              </div>
-              <div className="col-md-6 mb-3">
-                <label className="form-label">Nội dung (En)</label>
-                <Editor
-                  apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
-                  value={ditich.noi_dung_en}
-                  className="form-control"
-                  rows="5"
-                  onEditorChange={(content) =>
-                    setDiTich({ ...ditich, noi_dung_en: content })
-                  }
-                  placeholder="Nhập nội dung tiếng Anh"
-                />
-              </div>
+            <div className=" mb-3">
+              <label className="form-label">Nội dung (Vi)</label>
+              <Editor
+                apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
+                value={ditich.noi_dung_vi}
+                onEditorChange={(content) =>
+                  setDiTich({ ...ditich, noi_dung_vi: content })
+                }
+              />
+            </div>
+            <div className=" mb-3">
+              <label className="form-label">Nội dung (En)</label>
+              <Editor
+                apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
+                value={ditich.noi_dung_en}
+                className="form-control"
+                rows="5"
+                onEditorChange={(content) =>
+                  setDiTich({ ...ditich, noi_dung_en: content })
+                }
+                placeholder="Nhập nội dung tiếng Anh"
+              />
             </div>
 
             <div className="mb-3">

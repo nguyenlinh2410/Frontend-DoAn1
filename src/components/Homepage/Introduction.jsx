@@ -1,5 +1,5 @@
 import "./Introduction.scss";
-import images from "../assets/img";
+import images from "../../assets/img";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef } from "react";
 

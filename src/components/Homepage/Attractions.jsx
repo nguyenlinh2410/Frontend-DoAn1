@@ -5,8 +5,8 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useState, useEffect } from "react";
-import anh from "../assets/img/anhheader.png";
-import { getAllDiTich } from "../services/DiTichService";
+import anh from "../../assets/img/anhheader.png";
+import { getAllDiTich } from "../../services/DiTichService";
 
 export default function Attractions() {
   const { t } = useTranslation();

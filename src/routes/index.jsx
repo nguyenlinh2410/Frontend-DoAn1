@@ -1,7 +1,10 @@
 import Homepage from "../pages/Homepage";
-
+import GioiThieu from "../pages/GioiThieu.jsx";
+import DiTichs from "../pages/DiTichs.jsx";
+import LienHe from "../pages/LienHe.jsx";
 import AdminMananger from "../Admin";
-import AdminProtectedRoute from "../Admin/AdminProtectedRoute.jsx"
+import BaivietDitich from "../components/DiTich/BaivietDitich.jsx";
+import AdminProtectedRoute from "../Admin/AdminProtectedRoute.jsx";
 const {
   AdminLayout,
   MainAd,
@@ -18,16 +21,20 @@ const {
   DiSan,
   AddDiSan,
   EditDiSan,
-  
+  Test,
 } = AdminMananger;
 
 const routes = [
   { path: "/", element: <Homepage /> },
+  { path: "/about", element: <GioiThieu /> },
+  { path: "/di-tich", element: <DiTichs /> },
+  { path: "/lien-he", element: <LienHe /> },
+  { path: "/di-tich/:slug", element: <BaivietDitich /> },
   {
     path: "/admin",
     element: (
       <AdminProtectedRoute>
-      <AdminLayout />
+        <AdminLayout />
       </AdminProtectedRoute>
     ),
     children: [
@@ -44,10 +51,8 @@ const routes = [
       { path: "admin-mana", element: <Admin /> },
     ],
   },
- 
-  { path: "/login", element: <Login /> },
 
-  
+  { path: "/login", element: <Login /> },
 ];
 
 export default routes;

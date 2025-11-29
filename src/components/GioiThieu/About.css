@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+
+.gioithieu {
+  font-family: "Bitter", serif;
+}
+.main-container {
+  max-width: 1130px;
+  min-width: calc(100%-48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.video {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 37%;
+}
+.video iframe {
+  width: 900px;
+  height: 500px;
+  border-radius: 37px;
+}
+/* ============================================= */
+.gioithieu .title1 {
+  font-family: "Bitter", serif;
+  color: black;
+  font-size: 28px;
+  margin-top: 15px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+.container1 {
+  text-align: center;
+}
+/* ============================================== */
+.intro-title2 {
+  font-family: "Bitter", serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.gioithieu .title2 {
+  font-family: "Bitter", serif;
+  font-size: 16px;
+  /* font-size: 18px; */
+  text-align: justify;
+  color: #000;
+  margin: auto;
+  line-height: 25px;
+}
+.gioithieu .container2 {
+  padding: 25px;
+  background-color: rgba(217, 217, 217, 0.71);
+  border-radius: 30px;
+  margin: auto;
+  width: 1020px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.anhgioithieu {
+  display: block;
+  margin: auto;
+  width: 790px;
+  height: 479px;
+  padding: 25px;
+  border-radius: 37px;
+}
+hr {
+  /* width: 50%;
+  text-align: center; */
+  display: block;
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto !important;
+
+  margin-right: auto !important;
+  border-style: inset;
+  /* là một kiểu viền trong CSS dùng để tạo hiệu ứng lõm vào bên trong, giống như phần tử bị ấn xuống (kiểu 3D nhẹ). */
+  width: 50%;
+}
+
+/* ========================================== */
+.intro-title3 {
+  font-family: "Bitter", serif;
+  /* position: relative; */
+  font-size: 22px;
+  font-weight: 600;
+  /* width: 600px;
+  height: 29px; */
+  /* left: 67px;
+  top: 10px; */
+}
+.gioithieu .title3 {
+  font-family: "Bitter", serif;
+  font-size: 16px;
+  text-align: justify;
+  color: #000;
+  /* margin: auto; */
+  line-height: 25px;
+  margin-top: -7px;
+  margin-bottom: -7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gioithieu .container3 {
+  padding: 25px;
+  background-color: rgba(217, 217, 217, 0.71);
+  border-radius: 30px;
+  margin: auto;
+  width: 1020px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.gioithieu .anhunesco {
+  display: block;
+  margin: auto;
+  width: 790px;
+  height: 479px;
+  padding: 25px;
+  border-radius: 37px;
+}
+/* ============================================= */
+.intro-title4 {
+  font-family: "Bitter", serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.gioithieu .container-hapdan {
+  background-color: white;
+  margin: auto;
+}
+.container-hapdan .grid-container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  background-color: white;
+  margin-top: -63px;
+  box-sizing: border-box;
+  padding: 87px;
+}
+.container-hapdan .content h3 {
+  margin: 10px;
+  font-weight: 550;
+}
+.container-hapdan .content p {
+  line-height: 26px;
+  text-align: justify;
+  /* padding: 10px; */
+  margin: 12px;
+}
+.container-hapdan .content {
+  font-family: "Bitter", serif;
+  font-size: 16px;
+  background-color: rgba(217, 217, 217, 0.38);
+  /* width: 455px;
+  height: 150px; */
+  width: 397px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-hapdan .grid-container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  background-color: white;
+  margin-top: -114px;
+  padding: 87px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gioithieu .nethapdan {
+  display: block;
+  margin: auto;
+  width: 790px;
+  height: 479px;
+  padding: 25px;
+  border-radius: 37px;
+  margin-top: -79px;
+}
+
+.gioithieu .dot {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(217, 217, 217, 1);
+  margin-top: -55px;
+}
+.linehorizontal {
+  position: absolute;
+  left: 468px;
+  width: 25%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.219);
+  margin-top: -55px;
+}
+.linevertical {
+  position: absolute;
+  left: 87%;
+  width: 25%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.219);
+  rotate: 90deg;
+  transform-origin: center;
+  margin-top: -55px;
+  margin-left: -49.5%;
+}
+
+/* ============================================================== */
+.intro-title5 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Bitter", serif;
+}
+
+.container-noitieng {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container-noitieng .col-left {
+  display: flex;
+  flex-direction: column;
+}
+.col-left .anhleft1 {
+  height: 397px;
+  width: 314px;
+}
+.col-left .anhleft2 {
+  height: 229px;
+  margin-left: -15px;
+  width: 329px;
+  margin-top: 40px;
+}
+.container-noitieng .col-right {
+  display: flex;
+  flex-direction: column;
+}
+.col-right .content1,
+.content2 {
+  font-family: "Bitter", serif;
+  font-size: 16px;
+  /* xem xét đổi font-size 18->16 */
+  text-align: justify;
+  color: #000;
+  margin: auto;
+  line-height: 25px;
+}
+.col-right .content1 {
+  height: 210px;
+  width: 375px;
+}
+.col-right .content2 {
+  height: 130px;
+  width: 375px;
+  margin-top: 18px;
+  line-height: 35px;
+}
+.col-right .anhright {
+  height: 290px;
+  width: 354px;
+  margin-top: 15px;
+}
+.first-word {
+  font-size: 24px;
+  font-weight: 600;
+}
+.container-noitieng {
+  margin-top: -201px;
+  display: flex;
+  flex-direction: row;
+  padding: 230px;
+  gap: 45px;
+}
+/* .container-noitieng .co */

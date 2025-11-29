@@ -65,7 +65,7 @@ export default function EditDiSan() {
     try {
       await updateDiSan(id, disan);
       toast.success("Update Di Sản thành công");
-      navigate("/disan");
+      navigate("/admin/disan");
     } catch (e) {
       console.error("Loi khi cap nhat: ", e);
       toast.error("Lỗi update di sản");
@@ -161,8 +161,7 @@ export default function EditDiSan() {
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-6 mb-3">
+              <div className=" mb-3">
                 <label className="form-label">Nội dung (Vi)</label>
                 <Editor
                   apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
@@ -172,7 +171,7 @@ export default function EditDiSan() {
                   }
                 />
               </div>
-              <div className="col-md-6 mb-3">
+              <div className=" mb-3">
                 <label className="form-label">Nội dung (En)</label>
                 <Editor
                   apiKey="n6f2ezvfe4bkxgvypbnzhms8rkbapw8xhd0bs9rzz5w8jnb2"
@@ -185,7 +184,6 @@ export default function EditDiSan() {
                   placeholder="Nhập nội dung tiếng Anh"
                 />
               </div>
-            </div>
 
             <div className="mb-3">
               <label className="form-label">Hình ảnh (URL)</label>

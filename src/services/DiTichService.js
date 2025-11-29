@@ -34,3 +34,8 @@ export const updateDiTich = async (id, data) => {
   const res = await axios.put(`/api/ditich/updateDiTich/${id}`, data);
   return res.data;
 };
+
+export const getDiTichBySlug = async (slug) => {
+  const res = await axios.get(`/api/ditich/getDiTichSlug/${slug}`);
+  return res.data;
+};
