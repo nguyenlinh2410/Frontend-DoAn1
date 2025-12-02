@@ -15,6 +15,26 @@ export const getDanhMuc = async () => {
   }
 };
 
+export const getDiSanByDanhMuc = async (id) => {
+  try {
+    const res = await axios.get(`/api/disan/getByDanhmuc/${id}`);
+    return res.data;
+  } catch (e) {
+    console.error("Loi lay di san theo danh muc: ", e);
+    return [];
+  }
+};
+
+export const getDiSanBySlug = async (slug) => {
+  try {
+    const res = await axios.get(`/api/disan/getByDiSanSlug/${slug}`);
+    return res.data;
+  } catch (e) {
+    console.error("Loi lay di san theo slug: ", e);
+    return [];
+  }
+};
+
 export const getAllDiSan = async () => {
   try {
     const res = await axios.get("/api/disan/getAllDiSan");

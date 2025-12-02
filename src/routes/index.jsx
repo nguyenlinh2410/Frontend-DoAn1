@@ -1,10 +1,12 @@
-import Homepage from "../pages/Homepage";
+import Homepage from "../pages/Homepage.jsx";
 import GioiThieu from "../pages/GioiThieu.jsx";
 import DiTichs from "../pages/DiTichs.jsx";
 import LienHe from "../pages/LienHe.jsx";
 import AdminMananger from "../Admin";
 import BaivietDitich from "../components/DiTich/BaivietDitich.jsx";
 import AdminProtectedRoute from "../Admin/AdminProtectedRoute.jsx";
+import DiSans from "../pages/DiSans.jsx";
+import BaivietDisan from "../components/DiSan/BaivietDiSan.jsx";
 const {
   AdminLayout,
   MainAd,
@@ -30,6 +32,9 @@ const routes = [
   { path: "/di-tich", element: <DiTichs /> },
   { path: "/lien-he", element: <LienHe /> },
   { path: "/di-tich/:slug", element: <BaivietDitich /> },
+  { path: "/danh-muc/:id", element: <DiSans /> },
+  { path: "/di-san/:slug", element: <BaivietDisan /> },
+
   {
     path: "/admin",
     element: (

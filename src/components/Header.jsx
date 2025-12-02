@@ -5,9 +5,21 @@ import CoVN from "../assets/icon/flagvi.png";
 import CoVE from "../assets/icon/flagve.png";
 import Logo from "../assets/img/logo.png";
 import "./Header.css";
+// import { getDanhMuc } from "../services/DiSanService";
+// import { useEffect } from "react";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  // const [danhmuc, setDanhmuc] = useState([]);
+  // useEffect(() => {
+  //   fetchDanhmuc();
+  // }, []);
+
+  // const fetchDanhmuc = async () => {
+  //   const data = await getDanhMuc();
+  //   setDanhmuc(data);
+  // };
+
   const [lang, setLang] = useState("vi");
   const toggleLanguage = () => {
     const newLang = lang === "vi" ? "en" : "vi";
@@ -34,10 +46,18 @@ export default function Header() {
             <li>
               <a href="/di-tich">{t("header.heritage")}</a>
             </li>
-            <li>
-              <a href="#" style={{ width: "118%" }}>
-                {t("header.culture")}
+            <li className="dropdown">
+              <a href="#" className="dropbtn" style={{ width: "118%" }}>
+                {t("header.culture")}{" "}
+                <p style={{ rotate: "90deg", display: "inline-block" }}>
+                  {">"}
+                </p>
               </a>
+              <div className="dropdown-content">
+                <a href="/danh-muc/1">Lễ Hội</a>
+                <a href="/danh-muc/2">Ẩm Thực</a>
+                <a href="/danh-muc/3">Làng Nghề</a>
+              </div>
             </li>
             <li>
               <a href="#">{t("header.ticketInfo")}</a>

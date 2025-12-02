@@ -74,7 +74,7 @@ export default function Introduction() {
             />
           </div>
           <section className="trang-an-sights">
-            <h2>{t("Introduction.Ditich.tittle")}</h2>
+            <h2 className="title">{t("Introduction.Ditich.tittle")}</h2>
             <p>{t("Introduction.Ditich.text")}</p>
             <div
               style={{
@@ -111,7 +111,7 @@ export default function Introduction() {
 
         <div className="trang-an-disan">
           <section class="intangible-heritage">
-            <h2>{t("Introduction.Disan.tittle")}</h2>
+            <h2 className="title">{t("Introduction.Disan.tittle")}</h2>
             <p>{t("Introduction.Disan.text")}</p>
             <div
               style={{

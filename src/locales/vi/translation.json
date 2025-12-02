@@ -32,19 +32,37 @@
     "desc": "Quần thể Danh thắng Tràng An được UNESCO công nhận là di sản thế giới kép từ 2014",
     "adress": "Khu Du Lịch Sinh Thái Tràng An, Xã Ninh Xuân, Huyện Hoa Lư, Ninh Bình",
     "fb": "Fanpage Di sản Tràng An",
-    "tittle":"Để lại thông tin và nhận tư vấn:",
-    "name":"Họ và tên:",
-    "phone":"Số điện thoại:",
-    "email":"Email (nếu có):",
-    "send":"Gửi thông tin →"
+    "tittle": "Để lại thông tin và nhận tư vấn:",
+    "name": "Họ và tên:",
+    "phone": "Số điện thoại:",
+    "email": "Email (nếu có):",
+    "send": "Gửi thông tin →"
   },
 
-  "Gioithieu":{
-    "title1":"Giới thiệu về Tràng An",
-    "intro-title2":"GIỚI THIỆU CHUNG",
-    "title21":"Quần thể Danh thắng Tràng An nằm ở phía Đông tỉnh Ninh Bình, cách Hà Nội khoảng 90 km, được xem là một trong những vùng cảnh quan kỳ vĩ và nguyên sơ nhất Việt Nam. Khu vực này trải rộng trên 12.252 ha,bao gồm hệ thống núi đá vôi trùng điệp, những thung lũng xanh mát đan xen nhau, cùng mạng lưới hang động xuyên thủy độc đáo đã được hình thành qua hàng triệu năm kiến tạo địa chất. Tất cả hợp thành một không gian tự nhiên hùng vĩ nhưng vẫn đầy chất thơ, khiến Tràng An trở thành “kỳ quan non nước” hiếm có của vùng Bắc Bộ.",
-    "title22":" Tràng An có diện tích rộng lớn, bao gồm các khu vực như danh thắng sinh thái Tràng An, khu tâm linh chùa Bái Đính và cố đô Hoa Lư. Mỗi địa điểm đều mang một vẻ đẹp riêng: những dòng nước trong xanh soi bóng núi, các hang động huyền ảo như Hang Tối, Hang Sáng, Hang Nấu Rượu, hay những thung lũng yên bình với sắc xanh trải dài. Khí hậu trong lành và không gian yên tĩnh khiến nơi đây trở thành điểm đến lý tưởng cho du khách muốn tìm về thiên nhiên nguyên bản.",
-    "title23":"Không chỉ nổi tiếng bởi vẻ đẹp tự nhiên, Tràng An còn gắn liền với lịch sử – văn hóa lâu đời. Các di tích như đền Trần, đền Trình hay hành cung Vũ Lâm đều mang đậm dấu ấn của triều đại nhà Trần, khi nơi đây từng là căn cứ quân sự quan trọng. Những phát hiện khảo cổ cho thấy cư dân cổ đã sinh sống tại Tràng An từ hàng chục nghìn năm trước, tạo nên một bức tranh văn hóa – sinh thái phong phú và có giá trị lớn đối với nghiên cứu khoa học.",
-    "title24":"Sự kết hợp hài hòa giữa cảnh quan thiên nhiên kỳ vĩ và chiều sâu văn hóa – lịch sử đã góp phần tạo nên bản sắc độc đáo của Tràng An. Nhờ  những giá trị nổi bật này, nơi đây ngày nay không chỉ là điểm du  lịch nổi tiếng mà còn là biểu tượng của vẻ đẹp thiên nhiên Việt Nam,  thu hút đông đảo du khách trong và ngoài nước tìm đến khám phá."
+  "Gioithieu": {
+    "title1": "Giới thiệu về Tràng An",
+    "intro-title2": "GIỚI THIỆU CHUNG",
+    "title21": "Quần thể Danh thắng Tràng An nằm ở phía Đông tỉnh Ninh Bình, cách Hà Nội khoảng 90 km, được xem là một trong những vùng cảnh quan kỳ vĩ và nguyên sơ nhất Việt Nam. Khu vực này trải rộng trên 12.252 ha,bao gồm hệ thống núi đá vôi trùng điệp, những thung lũng xanh mát đan xen nhau, cùng mạng lưới hang động xuyên thủy độc đáo đã được hình thành qua hàng triệu năm kiến tạo địa chất. Tất cả hợp thành một không gian tự nhiên hùng vĩ nhưng vẫn đầy chất thơ, khiến Tràng An trở thành “kỳ quan non nước” hiếm có của vùng Bắc Bộ.",
+    "title22": " Tràng An có diện tích rộng lớn, bao gồm các khu vực như danh thắng sinh thái Tràng An, khu tâm linh chùa Bái Đính và cố đô Hoa Lư. Mỗi địa điểm đều mang một vẻ đẹp riêng: những dòng nước trong xanh soi bóng núi, các hang động huyền ảo như Hang Tối, Hang Sáng, Hang Nấu Rượu, hay những thung lũng yên bình với sắc xanh trải dài. Khí hậu trong lành và không gian yên tĩnh khiến nơi đây trở thành điểm đến lý tưởng cho du khách muốn tìm về thiên nhiên nguyên bản.",
+    "title23": "Không chỉ nổi tiếng bởi vẻ đẹp tự nhiên, Tràng An còn gắn liền với lịch sử – văn hóa lâu đời. Các di tích như đền Trần, đền Trình hay hành cung Vũ Lâm đều mang đậm dấu ấn của triều đại nhà Trần, khi nơi đây từng là căn cứ quân sự quan trọng. Những phát hiện khảo cổ cho thấy cư dân cổ đã sinh sống tại Tràng An từ hàng chục nghìn năm trước, tạo nên một bức tranh văn hóa – sinh thái phong phú và có giá trị lớn đối với nghiên cứu khoa học.",
+    "title24": "Sự kết hợp hài hòa giữa cảnh quan thiên nhiên kỳ vĩ và chiều sâu văn hóa – lịch sử đã góp phần tạo nên bản sắc độc đáo của Tràng An. Nhờ  những giá trị nổi bật này, nơi đây ngày nay không chỉ là điểm du  lịch nổi tiếng mà còn là biểu tượng của vẻ đẹp thiên nhiên Việt Nam,  thu hút đông đảo du khách trong và ngoài nước tìm đến khám phá.",
+    "intro-title3": "DI SẢN THẾ GIỚI UNESCO",
+    "title31": "Quần thể danh thắng Tràng An được UNESCO công nhận là Di sản Văn hóa và Thiên nhiên Thế giới vào năm 2014 – trở thành di sản hỗn hợp đầu  tiên của Việt Nam. Danh hiệu này khẳng định giá trị nổi bật toàn cầu của Tràng An trên cả hai phương diện: ",
+    "title32": "-Giá trị thiên nhiên: Hệ thống núi đá vôi, thung lũng ngập nước và các hang động xuyên thủy độc đáo được hình thành suốt hàng triệu năm, tạo nên cảnh quan ngoạn mục và hiếm có.",
+    "title33": "-Giá trị văn hóa – lịch sử: Tràng An lưu giữ dấu tích cư trú liên tục của người Việt cổ từ hơn 30.000 năm trước, cùng nhiều công trình gắn với triều đại nhà Trần và quá trình dựng nước – giữ nước.",
+    "title34": "Sự kết hợp hài hòa giữa thiên nhiên nguyên sơ và chiều sâu văn hóa lâu đời đã giúp Tràng An trở thành điểm đến mang tầm vóc quốc tế, được bảo tồn và trân trọng như một viên ngọc quý của Việt Nam và thế  giới.",
+    "intro-title4": "NÉT HẤP DẪN CỦA TRÀNG AN",
+    "title41": "1. Vẻ đẹp núi đá vôi và dòng nước trong xanh",
+    "title42": "Tràng An gây ấn tượng mạnh mẽ bởi hệ thống núi đá vôi và thung lũng xanh liên kết với nhau qua những dòng nước trong vắt. Du khách được ngồi thuyền xuôi theo sông, len qua các hang động tự nhiên huyền ảo như Hang Sáng, Hang Tối, Hang Địa Linh… tạo thành hành trình khám phá đầy mới mẻ và yên bình.",
+    "title43": "2. Dấu ấn văn hóa – lịch sử đặc sắc của Tràng An",
+    "title44": "Bên cạnh cảnh quan thiên nhiên kỳ vĩ,Tràng An còn sở hữu nhiều điểm đến mang giá trị văn hóa – lịch sử. Hành cung Vũ Lâm, đền Trình hay đền Trần đều gắn liền với triều đại nhà Trần, giúp du khách hiểu hơn về lịch sử và văn hóa Việt Nam qua từng dấu tích còn lại.",
+    "title45": "3. Sự hài hòa giữa thiên nhiên và bảo tồn du lịch",
+    "title46": "Một nét hấp dẫn khác là sự kết hợp hài hòa giữa thiên nhiên nguyên sơ và môi trường du lịch được bảo tồn cẩn thận. Không gian trong lành, tĩnh lặng, cùng hoạt động chèo thuyền thủ công của người dân địa phương tạo nên trải nghiệm gần gũi, nhẹ nhàng và hoàn toàn khác biệt.",
+    "title47": "4. Tràng An – vẻ đẹp thay đổi theo bốn mùa",
+    "title48": " Cuối cùng, Tràng An còn thu hút du khách bởi sự đa dạng sinh học và vẻ đẹp thay đổi theo mùa. Mùa xuân lễ hội đông vui, mùa hè xanh mướt, mùa thu trong trẻo và mùa đông trầm lắng – mỗi thời điểm đều mang lại một cảm xúc riêng, khiến bất kỳ ai ghé thăm cũng muốn quay lại lần nữa.",
+    "intro-title5": "Lý do Tràng An trở nên nổi tiếng",
+    "first-word": "Tràng An",
+    "title51": " nổi tiếng nhờ vẻ đẹp thiên nhiên kỳ vĩ, được xem như “Vịnh Hạ Long trên cạn” của Việt Nam. Hệ thống núi đá vôi cổ đại, hang động xuyên thủy và thung lũng ngập nước tạo nên cảnh quan duy nhất khó nơi nào có được. Bên cạnh đó, các di tích lịch sử và giá trị văn hóa lâu đời đã biến Tràng An trở thành điểm đến đáp ứng cả du lịch sinh thái và du lịch văn hóa.",
+    "title52":"Sự kiện được UNESCO ghi danh là Di sản Thế giới hỗn hợp đầu tiên của Việt Nam vào năm 2014 càng giúp Tràng An trở thành một biểu tượng du lịch tầm cỡ quốc tế."
   }
 }
