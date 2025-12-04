@@ -23,7 +23,10 @@ const {
   DiSan,
   AddDiSan,
   EditDiSan,
-  Test,
+
+  AddTuyenThamQuan,
+  TuyenThamQuan,
+  EditTuyenThamQuan,
 } = AdminMananger;
 
 const routes = [
@@ -47,13 +50,19 @@ const routes = [
       { path: "admin-mana", element: <Admin /> },
       { path: "create", element: <CreateUser /> },
       { path: "edit/:id", element: <EditUser /> },
+
       { path: "disan", element: <DiSan /> },
       { path: "disan/create", element: <AddDiSan /> },
       { path: "disan/edit/:id", element: <EditDiSan /> },
+
       { path: "ditich", element: <DiTich /> },
       { path: "ditich/create", element: <AddDiTich /> },
       { path: "ditich/edit/:id", element: <EditDiTich /> },
       { path: "admin-mana", element: <Admin /> },
+      
+      { path: "tuyen/create", element: <AddTuyenThamQuan /> },
+      { path: "tuyen", element: <TuyenThamQuan /> },
+      { path: "tuyen/edit/:id", element: <EditTuyenThamQuan /> },
     ],
   },
 

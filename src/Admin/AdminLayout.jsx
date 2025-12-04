@@ -78,6 +78,19 @@ export default function AdminLayout() {
           label: <Link to="/admin/ditich/create">Thêm mới</Link>,
         },
       ],
+    }, {
+      key: "sub-tuyen",
+      label: "Tuyến Tham Quan",
+      children: [
+        {
+          key: "tuyen-list",
+          label: <Link to="/admin/tuyen">Danh sách</Link>,
+        },
+        {
+          key: "tuyen-create",
+          label: <Link to="/admin/tuyen/create">Thêm mới</Link>,
+        },
+      ],
     },
 
     // Mục Logout

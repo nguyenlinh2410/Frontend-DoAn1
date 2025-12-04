@@ -1,0 +1,30 @@
+.tour-form {
+  width: 400px;
+  padding: 20px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: sans-serif;
+}
+
+.tour-form input,
+.tour-form button {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.tour-form button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tour-form button:hover {
+  background: #45a049;
+}
