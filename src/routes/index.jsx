@@ -7,6 +7,8 @@ import BaivietDitich from "../components/DiTich/BaivietDitich.jsx";
 import AdminProtectedRoute from "../Admin/AdminProtectedRoute.jsx";
 import DiSans from "../pages/DiSans.jsx";
 import BaivietDisan from "../components/DiSan/BaivietDiSan.jsx";
+import AllDiSan from "../components/DiSan/AllDiSan.jsx";
+import DatVe from "../components/DatVe/DatVe.jsx";
 const {
   AdminLayout,
   MainAd,
@@ -27,6 +29,8 @@ const {
   AddTuyenThamQuan,
   TuyenThamQuan,
   EditTuyenThamQuan,
+
+  VeThamQuan,
 } = AdminMananger;
 
 const routes = [
@@ -37,6 +41,8 @@ const routes = [
   { path: "/di-tich/:slug", element: <BaivietDitich /> },
   { path: "/danh-muc/:id", element: <DiSans /> },
   { path: "/di-san/:slug", element: <BaivietDisan /> },
+  { path: "/di-san", element: <AllDiSan /> },
+  { path: "/dat-ve", element: <DatVe /> },
 
   {
     path: "/admin",
@@ -59,10 +65,12 @@ const routes = [
       { path: "ditich/create", element: <AddDiTich /> },
       { path: "ditich/edit/:id", element: <EditDiTich /> },
       { path: "admin-mana", element: <Admin /> },
-      
+
       { path: "tuyen/create", element: <AddTuyenThamQuan /> },
       { path: "tuyen", element: <TuyenThamQuan /> },
       { path: "tuyen/edit/:id", element: <EditTuyenThamQuan /> },
+
+      { path: "ve", element: <VeThamQuan /> },
     ],
   },
 

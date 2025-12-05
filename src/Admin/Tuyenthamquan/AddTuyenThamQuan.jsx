@@ -62,7 +62,7 @@ export default function AddTuyenThamQuan() {
     const res = await createTuyen(data); // gửi FormData
     console.log('check res tuyen: ',res)
     toast.success("Thêm tuyến thành công!");
-    navigate("/admin/tuyen-tham-quan");
+    navigate("/admin/tuyen");
   } catch (err) {
     console.log(err);
     toast.error("Lỗi khi thêm tuyến!");

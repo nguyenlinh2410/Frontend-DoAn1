@@ -8,7 +8,10 @@ import { useState, useEffect } from "react";
 import anh from "../../assets/img/anhheader.png";
 import { getAllDiTich } from "../../services/DiTichService";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Attractions() {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const { i18n } = useTranslation();
   const [places, setPlaces] = useState([]);
@@ -51,7 +54,10 @@ export default function Attractions() {
           {places.length > 0 ? (
             places.map((place, index) => (
               <SwiperSlide key={index}>
-                <div className="place-card">
+                <div
+                  className="place-card"
+                  onClick={() => navigate(`/di-tich/${place.slug}`)}
+                >
                   <img src={place.hinh_anh} alt="" />
                   <p>
                     {i18n.language === "vi"

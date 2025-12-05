@@ -2,8 +2,10 @@ import "./Introduction.scss";
 import images from "../../assets/img";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Introduction() {
+   const navigate = useNavigate();
   const { t } = useTranslation();
   const videoRef = useRef(null);
 
@@ -51,7 +53,7 @@ export default function Introduction() {
             <p>{t("Introduction.Intro.text")}</p>
             <div className="btn">
               <div className="gach"></div>
-              <button className="read-more">
+              <button className="read-more" onClick={()=> navigate("/about")}>
                 {t("Introduction.read-more")}
               </button>
             </div>
@@ -84,7 +86,7 @@ export default function Introduction() {
               }}
             >
               <p className="separator-text">{t("Introduction.Ditich.text2")}</p>
-              <button className="read-more">
+              <button className="read-more" onClick={()=> navigate("/di-tich")}>
                 {t("Introduction.read-more")}
               </button>
             </div>
@@ -121,7 +123,7 @@ export default function Introduction() {
               }}
             >
               <p>{t("Introduction.Disan.text2")}</p>
-              <button class="read-more">{t("Introduction.read-more")}</button>
+              <button class="read-more" onClick={()=> navigate("/di-san")}>{t("Introduction.read-more")}</button>
             </div>
             <div class="thumbnail-gallery">
               <img

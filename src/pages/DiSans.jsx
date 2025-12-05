@@ -7,7 +7,7 @@ export default function DiSans() {
   return (
     <>
       <Header className="main-container" />
-      <DsDiSan className="main-container"/><br /><br /><br /><br /> <br /><br />
+      <DsDiSan className="main-container"/>
       <Footer />
     </>
   );

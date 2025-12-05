@@ -7,7 +7,7 @@ export default function DiTichs() {
   return (
     <>
       <Header className="main-container" />
-      <DsDiTich className="main-container"/><br /><br /><br /><br /> <br /><br />
+      <DsDiTich className="main-container"/>
       <Footer />
     </>
   );

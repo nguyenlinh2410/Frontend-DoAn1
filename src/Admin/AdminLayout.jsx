@@ -92,6 +92,16 @@ export default function AdminLayout() {
         },
       ],
     },
+     {
+      key: "sub-ve",
+      label: "Vé Tham Quan",
+      children: [
+        {
+          key: "ve-list",
+          label: <Link to="/admin/ve">Danh sách</Link>,
+        }
+      ],
+    }
 
     // Mục Logout
     // {

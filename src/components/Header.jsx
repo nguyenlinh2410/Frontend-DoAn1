@@ -5,20 +5,11 @@ import CoVN from "../assets/icon/flagvi.png";
 import CoVE from "../assets/icon/flagve.png";
 import Logo from "../assets/img/logo.png";
 import "./Header.css";
-// import { getDanhMuc } from "../services/DiSanService";
-// import { useEffect } from "react";
+
 
 export default function Header() {
   const { t, i18n } = useTranslation();
-  // const [danhmuc, setDanhmuc] = useState([]);
-  // useEffect(() => {
-  //   fetchDanhmuc();
-  // }, []);
-
-  // const fetchDanhmuc = async () => {
-  //   const data = await getDanhMuc();
-  //   setDanhmuc(data);
-  // };
+ 
 
   const [lang, setLang] = useState("vi");
   const toggleLanguage = () => {
@@ -47,7 +38,13 @@ export default function Header() {
               <a href="/di-tich">{t("header.heritage")}</a>
             </li>
             <li className="dropdown">
-              <a href="#" className="dropbtn" style={{ width: "118%" }}>
+              <a
+                href="/di-san"
+                className="dropbtn"
+                style={{ width: "118%" }}
+                // onClick={() => navigator("/di-san")}
+                
+              >
                 {t("header.culture")}{" "}
                 <p style={{ rotate: "90deg", display: "inline-block" }}>
                   {">"}
@@ -60,7 +57,7 @@ export default function Header() {
               </div>
             </li>
             <li>
-              <a href="#">{t("header.ticketInfo")}</a>
+              <a href="/dat-ve">{t("header.ticketInfo")}</a>
             </li>
             <li>
               <a href="/lien-he">{t("header.contact")}</a>

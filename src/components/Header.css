@@ -18,13 +18,17 @@
 }
 
 .header-container {
-  /* width: 90%; */
+  width: 90%;
   /* margin: auto; */
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+    /* max-width: 1130px; */
+  min-width: calc(100%-48px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo img {
@@ -45,7 +49,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 28px;
   margin-left: 59px;
   justify-content: space-evenly;
 }
@@ -95,6 +99,8 @@
 
 .hero img {
   width: 100vw;
+  height: 80vh;
+  object-fit: cover;
 }
 
 /* Dropdown container */
