@@ -1,0 +1,33 @@
+.bangve {
+  padding: 10px !important;
+
+  span,
+  div,
+  td,th {
+    font-size: 1.2rem;
+    text-align: center !important;
+    padding: 5px;
+  }
+
+  .btn-action {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+  }
+  .btn-action button{
+    font-size: 1rem;
+    width: 51px;
+    height: 21px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  .btn-action .check-btn:hover {
+    opacity: 0.5;
+  }
+  .btn-action .huy-btn:hover {
+    opacity: 0.5;
+  }
+}

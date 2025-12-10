@@ -94,11 +94,26 @@ export default function AdminLayout() {
     },
      {
       key: "sub-ve",
-      label: "Vé Tham Quan",
+      label: "Quản Lý Vé Tham Quan",
       children: [
         {
           key: "ve-list",
-          label: <Link to="/admin/ve">Danh sách</Link>,
+          label: <Link to="/admin/qlve">Quản Lý Vé</Link>,
+        },
+        {
+          key: "ve-tk",
+          label: <Link to="/admin/tkdoanhthu">Thống kê Doanh Thu</Link>,
+        }
+      ],
+    }
+    ,
+     {
+      key: "sub-lienhe",
+      label: "Thông tin liên hệ",
+      children: [
+        {
+          key: "lienhe-list",
+          label: <Link to="/admin/lienhe">Danh sách</Link>,
         }
       ],
     }

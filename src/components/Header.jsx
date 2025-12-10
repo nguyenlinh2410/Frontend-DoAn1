@@ -41,7 +41,7 @@ export default function Header() {
               <a
                 href="/di-san"
                 className="dropbtn"
-                style={{ width: "118%" }}
+                style={{ width: "107%" }}
                 // onClick={() => navigator("/di-san")}
                 
               >

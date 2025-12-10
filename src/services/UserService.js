@@ -4,6 +4,27 @@ import axios from "../axios";
 export const createLienHe = (data) => {
   return axios.post("/api/create/lienhe", data);
 };
+
+export const getAllLienHe = async () => {
+  try {
+    const res = await axios.get("/api/getAllLienHe");
+    return res.data;
+  } catch (e) {
+    console.error("Loi lay lien he: ", e);
+    return [];
+  }
+};
+
+export const deleteLienHe = async (id) => {
+  try {
+    const res = await axios.delete(`/api/deleteLienHe/${id}`);
+    return res.data;
+  } catch (e) {
+    console.error("Loi khi xoa user", e);
+    throw e;
+  }
+};
+
 export const createUser = (data) => {
   return axios.post("/api/create/users", data);
 };

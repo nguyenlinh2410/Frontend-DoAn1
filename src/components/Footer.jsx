@@ -3,6 +3,8 @@ import images from "../assets/img";
 import { useTranslation } from "react-i18next";
 import { createLienHe } from "../services/UserService";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -15,14 +17,14 @@ export default function Footer() {
     try {
       const res = await createLienHe({ name, phone, email });
       console.log("user created: ", res.data);
-      alert("User created successfully!");
+      toast.success("User created successfully!");
 
       setName("");
       setEmail("");
       setPhone("");
     } catch (e) {
       console.error("Error creating user: ", e);
-      alert("Error");
+      toast.error("Error");
     }
   };
   return (

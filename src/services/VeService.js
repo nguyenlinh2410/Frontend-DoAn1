@@ -14,6 +14,29 @@ export const getAllVe = async () => {
     return [];
   }
 };
+export const getVeByMaVe = async (mave) => {
+  try {
+    const res = await axios.get(`/api/ve/getVeBuyTT/${mave}`);
+    return res.data;
+  } catch (e) {
+    console.error("Loi khi lay ds ve theo tt", e);
+    throw e;
+  }
+};
+
+export const updateTrangThaiVe=(id,trang_thai)=>{
+  axios.put(`/api/ve/updateTrangThai/${id}/trang_thai`,{trang_thai})
+}
+
+export const getThongKeVe = async () => {
+  try {
+    const res = await axios.get(`/api/ve/getVeThongKe`);
+    return res.data;
+  } catch (e) {
+    console.error("Loi khi thong ke", e);
+    throw e;
+  }
+};
 
 export const deleteVe = async (id) => {
   try {
@@ -22,5 +45,25 @@ export const deleteVe = async (id) => {
   } catch (e) {
     console.error("Loi khi xoa ve", e);
     throw e;
+  }
+};
+
+export const getTongDoanhThu = async () => {
+  try {
+    const res = await axios.get("/api/ve/getDoanhThu");
+    return res.data;
+  } catch (e) {
+    console.error("Loi lay doanh thu ve: ", e);
+    return [];
+  }
+};
+
+export const getDoanhThuTheoNgay = async (ngay) => {
+  try {
+    const res = await axios.get(`/api/ve/getDoanhThuTheoNgay?ngay=${ngay}`);
+    return res.data;
+  } catch (e) {
+    console.error("Loi lay doanh thu ve ngay: ", e);
+    return [];
   }
 };

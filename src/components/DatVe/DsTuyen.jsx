@@ -4,10 +4,12 @@ import { getAllTuyen,getImageTuyen } from "../../services/DatVeService";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 // import { useNavigate } from "react-router-dom";
+import ModalDatVe from "./ModalFormDatVe";
 
 export default function DsTuyen() {
     // const navigate = useNavigate();
-  
+    const [selectedTuyen,setSelectedTuyen]=useState(null)
+  const [showModal,setShowModal]=useState(false)
       const { i18n } = useTranslation();
 
   const [tuyens, setTuyen] = useState([]);
@@ -53,10 +55,14 @@ export default function DsTuyen() {
             </div>
             <div className="gach-tuyen"></div>
 
-            <button class="book-button">Đặt vé ngay</button>
+            <button class="book-button" onClick={()=>{setShowModal(true)
+              setSelectedTuyen(tuyen)
+            }}>Đặt vé ngay</button>
+
           </div>
         </div>))}
       </div>
+      <ModalDatVe show={showModal} handleClose={()=>setShowModal(false)} tuyen={selectedTuyen}/>
     </div>
   );
 }

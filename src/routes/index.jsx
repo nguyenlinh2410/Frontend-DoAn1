@@ -9,6 +9,7 @@ import DiSans from "../pages/DiSans.jsx";
 import BaivietDisan from "../components/DiSan/BaivietDiSan.jsx";
 import AllDiSan from "../components/DiSan/AllDiSan.jsx";
 import DatVe from "../components/DatVe/DatVe.jsx";
+
 const {
   AdminLayout,
   MainAd,
@@ -31,6 +32,10 @@ const {
   EditTuyenThamQuan,
 
   VeThamQuan,
+  QuanLyVe,
+  ThongKeDT,
+
+  LienHes
 } = AdminMananger;
 
 const routes = [
@@ -71,6 +76,10 @@ const routes = [
       { path: "tuyen/edit/:id", element: <EditTuyenThamQuan /> },
 
       { path: "ve", element: <VeThamQuan /> },
+      { path: "qlve", element: <QuanLyVe /> },
+      { path: "tkdoanhthu", element: <ThongKeDT /> },
+
+      { path: "lienhe", element: <LienHes /> },
     ],
   },
 

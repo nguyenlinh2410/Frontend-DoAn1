@@ -1,70 +1,65 @@
+import { getAllLienHe,deleteLienHe } from "../services/UserService";
 import { useState, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
-import { getAllVe,deleteVe } from "../../services/VeService";
-import "../getAllAd.css";
-export default function GetAllVe() {
+import "./getAllAd.css";
+export default function LienHes() {
 //   const navigate = useNavigate();
-  const [ves, setVe] = useState([]);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     fetchUsers();
   }, []);
 
   const fetchUsers = async () => {
-    const data = await getAllVe();
-    setVe(data);
+    const data = await getAllLienHe();
+    setUsers(data);
   };
 
   const handleDelete = async (id) => {
     try {
-      await deleteVe(id);
+      await deleteLienHe(id);
       fetchUsers(); //load lai danh sach
     } catch (e) {
-      console.log("err delete ve", e);
+      console.log("err delete user", e);
     }
   };
   return (
     <>
+      <h1 className="Allad">Danh sách thông tin liên hệ</h1>
 
       <table className="table-ad">
         <tr>
           <th>STT</th>
-          <th>Mã Vé</th>
-          <th>Họ tên</th>
-          <th>Sđt</th>
+          <th>Name</th>
           <th>Email</th>
-          <th>Tổng Tiền</th>
-          <th>Ngày Đặt</th>
+          <th>Phone</th>
           <th>Action</th>
         </tr>
-        {ves.length > 0 ? (
-          ves.map((ve,index) => (
+        {users.length > 0 ? (
+          users.map((user,index) => (
             <tr key={index}>
               <td>{index+1}</td>
-              <td>{ve.ma_ve}</td>
-              <td>{ve.ho_ten_khach}</td>
-              <td>{ve.sdt}</td>
-              <td>{ve.email}</td>
-              <td>{ve.tong_tien}</td>
-              <td>{ve.ngay_dat}</td>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+              <td>{user.phone}</td>
               <td>
                 {/* <button
                   className="edit-btn"
-                //   onClick={() => navigate(`/admin/ditich/edit/${ditich.id}`)}
+                //   onClick={() => navigate(`/admin/edit/${user.id}`)}
                 >
                   Sửa
                 </button> */}
                 <button
                   className="delete-btn"
-                  onClick={() => handleDelete(ve.id)}
+                  onClick={() => handleDelete(user.id)}
                 >
-                  Huỷ
+                  Xóa
                 </button>
               </td>
             </tr>
           ))
         ) : (
-          <tr>Không có Di tich</tr>
+          <tr>Không có thông tin</tr>
         )}
         
       </table>
