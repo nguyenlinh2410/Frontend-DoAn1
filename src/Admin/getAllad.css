@@ -5,6 +5,17 @@
   font-weight: 600;
 }
 
+.btn-themad{
+      border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 3px;
+}
+
+.btn-themad:hover{
+  opacity: 0.5;
+}
+
 table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;

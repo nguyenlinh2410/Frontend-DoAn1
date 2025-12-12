@@ -62,8 +62,6 @@ export default function ModalDatVe({ show, handleClose, tuyen }) {
     try {
       const res = await createVe(dataSend);
       toast.success("Đặt vé thành công!");
-
-      console.log("yui check res",res);
       setMaVe(res.data.data.ma_ve);
       setOpenModal(true);
       //reset
@@ -74,7 +72,6 @@ export default function ModalDatVe({ show, handleClose, tuyen }) {
         ho_ten_khach: "",
         sdt: "",
         email: "",
-
         tuyen_tham_quan_id: tuyen?.id || null,
       });
       handleClose();
@@ -219,7 +216,7 @@ export default function ModalDatVe({ show, handleClose, tuyen }) {
             Đóng
           </Button>
 
-          <Button variant="success" onClick={handleSubmit} >
+          <Button variant="success" onClick={handleSubmit}>
             Đặt vé
           </Button>
         </Modal.Footer>

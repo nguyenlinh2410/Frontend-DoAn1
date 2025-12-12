@@ -109,13 +109,13 @@ export default function AdminLayout() {
     ,
      {
       key: "sub-lienhe",
-      label: "Thông tin liên hệ",
-      children: [
-        {
-          key: "lienhe-list",
-          label: <Link to="/admin/lienhe">Danh sách</Link>,
-        }
-      ],
+      label:  <Link to="/admin/lienhe">Thông tin liên hệ</Link>,
+      // children: [
+      //   {
+      //     key: "lienhe-list",
+      //     label: <Link to="/admin/lienhe">Danh sách</Link>,
+      //   }
+      // ],
     }
 
     // Mục Logout

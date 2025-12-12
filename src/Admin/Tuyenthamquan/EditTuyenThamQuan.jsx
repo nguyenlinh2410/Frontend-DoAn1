@@ -82,7 +82,7 @@ export default function EditTuyenThamQuan() {
     <>
       <div className=" ">
         <form onSubmit={handleUpdate} class="tour-form">
-          <h2 style={{ textAlign: "center" }}>🏛️ CREATE TUYEN</h2>
+          <h2 style={{ textAlign: "center" }}>🏛️ UPDATE TUYEN</h2>
 
           <label>Tên tuyến (VI):</label>
           <input
